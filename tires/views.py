@@ -6,29 +6,22 @@ from rest_framework import generics, permissions
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 
-<<<<<<< HEAD
-from tires.serializers import *
-=======
+
 from tires.serializers import (
     TiresSerializer,
     Categoryserializer,
     Reviewsserializer,
     TiresidSerializer,
-<<<<<<< HEAD
     FavoriteSerializer,
-    TiresCreateSerializer,
-=======
-    FavoriteSerializer
->>>>>>> origin/main
+    TiresCreateSerializer
 )
->>>>>>> refs/remotes/origin/main
 
 from rest_framework import generics
 from .models import *
 
 from rest_framework import status
 from django.db.models import Count
-from tires.models import (
+from tires.models import(
     Tires,
     Category,
     Reviews,
